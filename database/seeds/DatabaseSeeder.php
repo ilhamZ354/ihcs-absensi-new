@@ -1,0 +1,89 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class DatabaseSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $this->call(SimkarSysnonyms::class);
+        $this->call(TrJenisAbsenSeeder::class);
+        $this->call(FnGetCutiPanjang::class);
+        $this->call(FnGetCutiTahunan::class);
+        $this->call(FnGetFormulirAbsensiByNikTgl::class);
+        $this->call(SpGenerateHariMinggu::class);
+        $this->call(SpGetListAbsensiRedundant::class);
+        $this->call(SpInsertOrRewriteAbsensiDetail::class);
+        $this->call(VListUserIHCS::class);
+        $this->call(SpGenerateFulldaysAbsensiDetails::class);
+        $this->call(TrIndexNamaHari::class);
+        $this->call(TrKelompokKerja::class);
+        $this->call(TrKelompokKerjaDetail::class);
+        $this->call(SpGenerateKelompokKerjaHarianByIdDetail::class);
+        $this->call(SpGenerateAllKelompokKerjaHarian::class);
+        $this->call(TmUnitKelompokKerja::class);
+        $this->call(SpUpdateSatpamFromSimkar::class);
+        $this->call(SpGenerateSummaryAbsensiPerBulan::class);
+        $this->call(TrLiburCutiBersama::class);
+        $this->call(SpUpdateUnitTglBekerja::class);
+        $this->call(VTimeTable::class);
+        $this->call(FnGetDurasiDalamMenit::class);
+        $this->call(SpInsertOrRewritePeserta::class);
+        $this->call(FnGeTIdPeserta::class);
+        $this->call(ClearTemporaryTables::class);
+        $this->call(SpGenerateTelatDatangCepatPulang::class);
+        $this->call(SpRunBackupDB::class);
+        $this->call(SpGenerateKuotaCutiPanjang::class);
+        $this->call(SpGenerateKuotaCutiTahunan::class);
+        $this->call(VHistoryKaryawan::class);
+        $this->call(SpGenerateSummaryAbsensiPerBulanFilter::class);
+        $this->call(VHitungInsentifKarpelAndNonPtpn4::class);
+        $this->call(FnIsLiburAtauCutiBersama::class);
+        $this->call(VCutiTahunanWithCB::class);
+        $this->call(VKaryawanAll::class);
+        $this->call(TrConfigApps::class);
+        $this->call(VPermissions::class);
+        $this->call(SpGetListUserFinger::class);
+        $this->call(SpGetDetailUserFinger::class);
+        $this->call(FnGetListDateRange::class);
+        $this->call(FnGetStatusAbsensi::class);
+        $this->call(FnGetHkByNikDateRange::class);
+        $this->call(FnGetFormulirAbsensiByIdpesertaTgl::class);
+        $this->call(SpDeleteFormulirAbsensiById::class);
+        $this->call(FnGetStatusFormulirAbsensiKaryawanUnit::class);
+        // $this->call(SpSaveSummaryAbsensi::class);
+        $this->call(TpPermissionSeeder::class);
+        $this->call(TpRoleSeeder::class);
+        $this->call(TpRolePermissionSeeder::class);
+        $this->call(SpGetTemplateCTCP::class);
+        $this->call(SpParseCTCP::class);
+        $this->call(SpAdminSaveSummaryAbsensiBulananFinal::class);
+        $this->call(SpAdminGenerateAllSummaryAbsensi::class);
+        $this->call(SpUpdateJumlahAbsensiBulanan::class);
+        $this->call(SpUpdateSummaryBasedFormulirKehadiran::class);
+        $this->call(FnGetJmlHKPengajuanCuti::class);
+        $this->call(FnGetListDateOfHKPengajuanCuti::class);
+        $this->call(FnGetJmlHKBulananUnit::class);
+        $this->call(VSummaryHarian::class);
+        $this->call(SpGetSummaryAbsensiHarian::class);
+        $this->call(FnGetJmlHkPengajuanCutiPanjang::class);
+        $this->call(FnGetListDateOfHkPengajuanCutiPanjang::class);
+        $this->call(FnGetDetailFingerHarian::class);
+        $this->call(SpGetDetailRealtimeFingerById::class);
+        $this->call(SpGetFormulirDetailById::class);
+        $this->call(SpGenerateBkm::class);
+        $this->call(SpGenerateKuotaCutiTahunanKaryawanBaru::class);
+        $this->call(VAbsensiHarianKanpus::class);
+        $this->call(VAbsensiMobileKanpus::class);
+        $this->call(SpGenerateDetailKehadiranHarianNew::class);
+        $this->call(SpNewGetSummaryBulanan::class);
+        $this->call(SpNewGenerateDetailAbsensiHarianIndividu::class);
+        $this->call(SpNewGenerateDetailAbsensiHarianIndividuNonmesin::class);
+        $this->call(SpNewRegenerateDetailAbsensiHarianIndividu::class);
+    }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <add key="DB_HOST" value="10.20.1.99" />
+    <add key="DB_NAME" value="hcis_absensi" />
+    <add key="DB_USERNAME" value="yusren" />
+    <add key="DB_PASSWORD" value="Blades0409A" />
+  </appSettings>
+</configuration>

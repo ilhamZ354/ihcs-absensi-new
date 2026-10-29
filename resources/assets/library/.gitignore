@@ -1,0 +1,5 @@
+*.bak
+/absensi-harian/*.sqlite
+/absensi-harian/*.config
+/absensi-harian/Logs/*.*
+!.gitignore

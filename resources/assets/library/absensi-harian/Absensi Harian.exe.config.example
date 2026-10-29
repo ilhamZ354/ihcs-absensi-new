@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<configuration>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/>
+  </startup>
+  <appSettings>
+    <add key="DB_HOST" value="10.10.5.19" />
+    <add key="DB_NAME" value="hcis_absensi" />
+    <add key="DB_USERNAME" value="sa" />
+    <add key="DB_PASSWORD" value="mrsi19@ptpn4" />
+    <add key="ABSENSI_HARIAN_FULL" value="false" />
+  </appSettings>
+</configuration>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <add key="DB_HOST" value="10.10.5.19" />
+    <add key="DB_NAME" value="hcis_absensi" />
+    <add key="DB_USERNAME" value="sa" />
+    <add key="DB_PASSWORD" value="mrsi19@ptpn4" />
+  </appSettings>
+</configuration>
